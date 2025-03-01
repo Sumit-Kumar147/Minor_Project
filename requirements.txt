@@ -1,0 +1,9 @@
+django
+python-dotenv
+cloudinary
+tensorflow
+opencv-python-headless
+numpy
+pillow
+gunicorn
+whitenoise
