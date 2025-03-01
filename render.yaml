@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: Garbage_prediction
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn mysite.wsgi:application --config gunicorn_config.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.9.18
+      - key: PORT
+        value: 8000
+      - key: DEBUG
+        value: False
