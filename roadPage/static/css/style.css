@@ -1,0 +1,162 @@
+/* Background and Text Styling */
+body {
+    animation: backgroundAnimation 5s ease infinite;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Futuristic Card Styling */
+.futuristic-card {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    animation: cardFloat 3s ease-in-out infinite;
+}
+
+/* Floating Effect for Card */
+@keyframes cardFloat {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Fancy Heading */
+.fancy-heading {
+    font-weight: bold;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    color: #ffcc00;
+    animation: glowText 1.5s infinite alternate;
+}
+
+/* Glowing Text Animation */
+@keyframes glowText {
+    0% {
+        text-shadow: 0px 0px 15px rgba(255, 255, 0, 0.6);
+    }
+    100% {
+        text-shadow: 0px 0px 30px rgba(255, 255, 0, 1);
+    }
+}
+
+/* Background Animation */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+    50% {
+        background: linear-gradient(135deg, #f12711, #f5af19);
+    }
+    100% {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+}
+
+/* Custom HR */
+.custom-hr {
+    border-top: 3px solid #ffcc00;
+    width: 50%;
+    margin: 10px auto;
+    opacity: 0.8;
+}
+
+/* Upload Section */
+.upload-label {
+    font-size: 1.2rem;
+    color: #ffcc00;
+}
+
+/* File Input Styling */
+.file-input {
+    border: 2px dashed #ffcc00;
+    padding: 12px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.file-input:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Button Styling */
+.fancy-button {
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0px 5px 20px rgba(255, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.fancy-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(255, 0, 0, 0.6);
+    background: linear-gradient(135deg, #dd2476, #ff512f);
+}
+
+/* Image Preview Styling */
+.image-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+.image-preview img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-preview img:hover {
+    transform: scale(1.05);
+}
+
+/* Glowing Text for Result */
+.glowing-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgba(255, 255, 0, 0.8);
+    animation: glowResultText 1.5s infinite alternate;
+}
+
+@keyframes glowResultText {
+    0% {
+        text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.6);
+    }
+    100% {
+        text-shadow: 0px 0px 20px rgba(255, 255, 0, 1);
+    }
+}
+
+/* Result Section */
+#resultText {
+    color: #ffcc00;
+    font-size: 1.5rem;
+}
